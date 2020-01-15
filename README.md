@@ -1,2 +1,2 @@
-# css3stickers
+# ninStickers
 CSS3 Sticker Over Image
