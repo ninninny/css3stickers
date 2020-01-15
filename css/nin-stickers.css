@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap');
+
+.ninSticker{position: relative;}
+.ninSticker:after {
+    font-family: 'Lato', sans-serif; font-weight: 800; text-align: center;
+    display: block;position: absolute; top:-10px; right:-10px; z-index: 222;
+    -moz-box-shadow:1px 3px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow:1px 3px 2px rgba(0,0,0,0.3);
+    box-shadow:1px 3px 2px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+.ninSticker:hover:after{top:-15px; -moz-box-shadow:1px 10px 5px rgba(0,0,0,0.2); -webkit-box-shadow:1px 10px 5px rgba(0,0,0,0.2); box-shadow:1px 10px 5px rgba(0,0,0,0.2);}
+
+/*      SMALL      */
+.ninSticker.sm-hot:after,
+.ninSticker.sm-new:after,
+.ninSticker.sm-sale:after,
+.ninSticker.sm-free:after{
+    width: 60px; height: 60px; border-radius: 50%; padding-top: 18px;
+    font-size: 16px; line-height: 1.5; color: white; text-shadow:-1px -1px 1px rgba(0,0,0,0.3);
+}
+
+.ninSticker.sm-hot:after {background: #F26A36; content: "HOT"; }
+.ninSticker.sm-new:after {background: #38C7AD; content: "NEW";}
+.ninSticker.sm-sale:after {background: #E81817; content: "SALE";}
+.ninSticker.sm-free:after {background: #39A661; content: "FREE";}
+
+.ninSticker.sm-25off:after {
+    width: 60px; height: 60px; border-radius: 50%; padding-top: 12px;
+    font-size: 16px; line-height: 1.1; color: white; text-shadow:-1px -1px 1px rgba(0,0,0,0.3);
+}
+.ninSticker.sm-25off:after {background: #E81817; content: "25% OFF";}
+
+/*      LARGE      */
+.ninSticker.l-25off:after,
+.ninSticker.l-30off:after,
+.ninSticker.l-50off:after{
+    width: 100px; height: 100px; border-radius: 50%; padding-top: 24px;
+    font-size: 24px; line-height: 1.1; color: white; text-shadow:-1px -1px 1px rgba(0,0,0,0.3);
+}
+
+.ninSticker.l-25off:after {background: #E81817; content: "25% OFF";}
+.ninSticker.l-30off:after {background: #E81817; content: "30% OFF";}
+.ninSticker.l-50off:after {background: #E81817; content: "50% OFF";}
+
+/*      SVG SYMBOL      */
+svg{display:block;margin:auto;}
+
+.ninSticker.sm-heart:after,
+.ninSticker.sm-cart:after,
+.ninSticker.sm-flame:after{
+    width: 60px; height: 60px; border-radius: 50%; padding-top: 18px;
+}
+
+.ninSticker.sm-heart:after {background: #FF447E; content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24px" height="24px" viewBox="0 0 510 510"><path d="M255,489.6l-35.7-35.7C86.7,336.6,0,257.55,0,160.65C0,81.6,61.2,20.4,140.25,20.4c43.35,0,86.7,20.4,114.75,53.55C283.05,40.8,326.4,20.4,369.75,20.4C448.8,20.4,510,81.6,510,160.65c0,96.9-86.7,175.95-219.3,293.25L255,489.6z"/></svg>');}
+.ninSticker.sm-cart:after {background: #68A3FF; content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  fill="white" width="24px" height="24px" viewBox="0 0 510 510"><path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"/></svg>');}
+.ninSticker.sm-flame:after {background: #f12711;background: -webkit-linear-gradient(to top, #f12711, #f5af19); background: linear-gradient(to top, #f12711, #f5af19);
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24px" height="24px" viewBox="0 0 455.04 455.04"><path d="M259.52,0c0,0,15.787,56.533,15.787,102.4c0,43.947-28.8,79.68-72.853,79.68c-44.053,0-77.333-35.627-77.333-79.68l0.533-7.68c-42.88,51.307-68.8,117.44-68.8,189.653c0,94.293,76.373,170.667,170.667,170.667s170.667-76.373,170.667-170.667C398.187,169.28,342.827,66.667,259.52,0z M221.333,391.04c-37.973,0-68.8-29.973-68.8-66.987c0-34.667,22.293-58.987,60.053-66.56c37.76-7.573,76.8-25.707,98.453-54.933c8.32,27.52,12.693,56.533,12.693,86.08C323.733,345.067,277.867,391.04,221.333,391.04z"/></svg>');}
